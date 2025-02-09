@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Users page</string>
+    <string name="edit_profile_button_text">Edit Profile</string>
+    <string name="user_image_description">User profile picture</string>
+
+    <string name="name_hint">Имя</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Телефон</string>
+
+    <string name="save_button_text">Сохранить</string>
+
+    <string name="save_button_description">Сохранить изменения профиля</string>
+</resources>
