@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Laba_20_gps" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="android:colorBackground">@android:color/white</item>
+    <!-- Основная тема -->
+    <style name="Theme.Laba_20_gps" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#00FFFF</item> <!-- Голубой неон -->
+        <item name="colorOnPrimary">#000000</item> <!-- Чёрный -->
+        <item name="android:windowBackground">#121212</item> <!-- Темный фон -->
+        <item name="android:textColorPrimary">#00FFFF</item> <!-- Текст неонового цвета -->
     </style>
+
 </resources>

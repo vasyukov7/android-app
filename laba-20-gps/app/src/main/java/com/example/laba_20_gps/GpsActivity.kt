@@ -1,5 +1,7 @@
 package com.example.laba_20_gps
 
+import android.animation.ObjectAnimator
+import android.animation.ValueAnimator
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -34,6 +36,34 @@ class GpsActivity : AppCompatActivity(), LocationListener {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1)
         } else {
             startTracking()
+        }
+
+        // Анимация неонового свечения
+        val neonAnimation = ValueAnimator.ofFloat(0.3f, 1f).apply {
+            duration = 1500
+            repeatMode = ValueAnimator.REVERSE
+            repeatCount = ValueAnimator.INFINITE
+            addUpdateListener { valueAnimator ->
+                val alphaValue = valueAnimator.animatedValue as Float
+                latitudeTextView.alpha = alphaValue
+                longitudeTextView.alpha = alphaValue
+                statusTextView.alpha = alphaValue
+            }
+            start()
+        }
+
+        // Анимация появления текста
+        ObjectAnimator.ofFloat(latitudeTextView, "translationY", -50f, 0f).apply {
+            duration = 1000
+            start()
+        }
+        ObjectAnimator.ofFloat(longitudeTextView, "translationY", -50f, 0f).apply {
+            duration = 1200
+            start()
+        }
+        ObjectAnimator.ofFloat(statusTextView, "translationY", -50f, 0f).apply {
+            duration = 1400
+            start()
         }
     }
 

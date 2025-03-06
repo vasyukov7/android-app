@@ -2,4 +2,7 @@
     <string name="app_name">laba_20_gps</string>
     <string name="name">ФИО</string>
     <string name="group">Группа</string>
+    <string name="gps_status">GPS статус: -</string>
+    <string name="latitude">Широта: -</string>
+    <string name="longitude">Долгота: -</string>
 </resources>
