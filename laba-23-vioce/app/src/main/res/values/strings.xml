@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">laba_23_voice</string>
+    <string name="name">ФИО</string>
+    <string name="group">Группа</string>
+</resources>
